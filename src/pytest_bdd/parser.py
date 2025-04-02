@@ -232,7 +232,7 @@ class ScenarioTemplate:
             description=self.description,
             rule=self.rule,
         )
-        
+
     def find_scenario_example_from_context(self, context: Mapping[str, object]) -> Examples:
         for example in self.examples:
             example_param = dict(zip(example.example_params, example.examples[0]))
